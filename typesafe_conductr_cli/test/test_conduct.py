@@ -8,6 +8,7 @@ class TestConduct(TestCase):
     parser = build_parser()
 
     def test_parser_version(self):
+        print("Printing when testing!!!")
         args = self.parser.parse_args("version".split())
 
         self.assertEqual(args.func.__name__, "version")
